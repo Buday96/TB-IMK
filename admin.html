@@ -41,6 +41,13 @@
         <a href="#" id="search-button"><i data-feather="search"></i></a>
         <p>Selamat Datang, <b><br>Admin</b></p>
         <a href="Index.html" id="log-out"><i data-feather="log-out"></i></a>
+        <!--Fungsi tidak bisa balik jika sudah logout-->
+        <script>
+            document.querySelector("#log-out").addEventListener("click", function() {
+            sessionStorage.removeItem("isLoggedIn"); 
+            window.location.href = "Login.html";
+          });
+        </script>
         <a href="#" id="toggle-menu"><i data-feather="menu"></i></a>
       </div>
 
@@ -391,5 +398,16 @@
 
     <!-- My Javascript -->
     <script src="js/script.js"></script>
+    <!--Disable cache -->
+    <script>
+      if (!sessionStorage.getItem("isLoggedIn")) {
+        window.location.href = "Login.html"; 
+      }
+      window.onload = function() {
+        if (!sessionStorage.getItem("isLoggedIn")) {
+          window.location.href = "Login.html";
+        }
+      };
+    </script>
   </body>
 </html>
