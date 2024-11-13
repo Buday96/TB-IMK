@@ -354,7 +354,6 @@ slider {
 /* About Section end */
 
 /* Produk kami dan produk unggulan kami start */
-
 .produk,
 .products,
 .contact {
@@ -491,8 +490,16 @@ slider {
   padding: 1rem 3rem;
   font-size: 1.7rem;
   color: #fff;
-  background-color: var(--primary);
+  background-color: #7d0a0a;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.contact .row form .btn:hover {
+  color: #494949 !important;
+  border-radius: 50px;
+  border-color: #494949 !important;
+  transition: all 0.3s ease 0s;
 }
 /* Contact Section end*/
 
