@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login | PT Selamat Sempurna Tbk</title>
+  <title>Register | PT Selamat Sempurna Tbk</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +19,7 @@
   <!-- My Style -->
   <link rel="stylesheet" href="CSS/Styles.css" />
   <link rel="stylesheet" href="CSS/reset.css" />
-  <link rel="stylesheet" href="CSS/login.css" />
+  <link rel="stylesheet" href="CSS/register.css" />
 </head>
 
 <body>
@@ -47,29 +47,31 @@
   <!-- Login -->
   <div class="container">
     <div class="forms">
-      <div class="form login">
-        <span class="title">Login</span>
-        <form id="loginForm">
+      <div class="form register">
+        <span class="title">Register</span>
+        <form id="registerForm">
           <div class="input-field">
             <input type="text" id="email" placeholder="Masukan Email Anda" required />
             <i class="uil uil-envelope icon"></i>
+          </div>
+          <div class="input-field">
+            <input type="text" id="name" placeholder="Masukan Nama Anda" required />
+            <i class="uil uil-user icon"></i>
           </div>
           <div class="input-field">
             <input type="password" id="password" class="password" placeholder="Masukan Password Anda" required />
             <i class="uil uil-lock icon"></i>
             <i class="uil uil-eye-slash showHidePw"></i>
           </div>
-          <div class="checkbox-text">
-            <div class="checkbox-content">
-              <input type="checkbox" id="logCheck" />
-              <label for="logCheck" class="text">Ingat Saya</label>
-            </div>
+          <div class="input-field">
+            <input type="password" id="confirm_password" class="confirm_password" placeholder="Confirm Password Anda" required />
+            <i class="uil uil-lock icon"></i>
+            <i class="uil uil-eye-slash showHidePw"></i>
           </div>
-          <div class="error-message"></div>
           <div class="input-field button">
-            <input type="submit" value="Login" />
+            <input type="submit" value="Register"/>
           </div>
-          <div class="login_signup"> Belum Punya Akun ? <a href="Register.html" id="signup">Daftar</a></div>
+          <div class="login_signup"> Sudah Punya Akun ? <a href="Login.html" id="signup">Login</a></div>
         </form>
       </div>
     </div>
@@ -81,6 +83,6 @@
   </script>
 
   <!-- My Javascript -->
-  <script src="js/login.js"></script>
+   <script src="js/register.js"></script>
 </body>
 </html>
