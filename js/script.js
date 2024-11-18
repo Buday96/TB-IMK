@@ -11,17 +11,23 @@ const next = document.querySelector("#next");
 const prev = document.querySelector("#prev");
 
 // Auto play slider
+if (next) {
+  next.addEventListener("click", () => {
+    initSlider("next");
+  });
+}
+
+if (prev) {
+  prev.addEventListener("click", () => {
+    initSlider("prev");
+  });
+}
+
 let runAutoPlay = setTimeout(() => {
-  next.click();
+  if (next) {
+    next.click();
+  }
 }, 8000);
-
-next.addEventListener("click", () => {
-  initSlider("next");
-});
-
-prev.addEventListener("click", () => {
-  initSlider("prev");
-});
 
 const initSlider = (type) => {
   const sliderItems = list.querySelectorAll(".item");
