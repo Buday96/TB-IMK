@@ -27,7 +27,7 @@ let runAutoPlay = setTimeout(() => {
   if (next) {
     next.click();
   }
-}, 8000);
+}, 6000);
 
 const initSlider = (type) => {
   const sliderItems = list.querySelectorAll(".item");
@@ -49,7 +49,7 @@ const initSlider = (type) => {
   clearTimeout(runAutoPlay);
   runAutoPlay = setTimeout(() => {
     next.click();
-  }, 8000);
+  }, 6000);
 };
 
 // Toggle class active untuk search form
