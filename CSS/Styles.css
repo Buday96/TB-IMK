@@ -377,7 +377,7 @@ slider {
 .products p,
 .contact p {
   text-align: center;
-  max-width: 30rem;
+  max-width: 60rem;
   margin: auto;
   font-weight: 100;
   line-height: 1.6;
@@ -393,8 +393,8 @@ slider {
 .produk .row .menu-card {
   text-align: center;
   padding-bottom: 4rem;
-  box-shadow: 0 4px 8px 0 rgba(236, 235, 235, 0.788),
-    0 6px 20px 0 rgba(245, 242, 242, 0.19);
+  box-shadow: 0 1px 3px 0 rgba(236, 235, 235, 0.788),
+    0 2px 0 1px rgba(245, 242, 242, 0.19);
   margin-bottom: 3rem;
   margin-left: 2rem;
   border-radius: 7%;
@@ -420,8 +420,8 @@ slider {
   text-align: center;
   border: 1px solid #666;
   padding: 2rem;
-  box-shadow: 0 2px 4px 0 rgba(236, 235, 235, 0.788),
-    0 6px 20px 0 rgba(245, 242, 242, 0.19);
+  box-shadow: 0 0 2px 0 rgba(236, 235, 235, 0.788),
+    0 1px 5px 0 rgba(245, 242, 242, 0.19);
 }
 
 .products .product-image {
@@ -444,6 +444,28 @@ slider {
 
 .products .product-stars .star-full {
   fill: #ffe31a;
+}
+
+.more-produk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-produk .lihat-produk {
+  padding: 10px 20px;
+  border: 0.5px solid white;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.lihat-produk:hover {
+  background-color: var(--primary);
+  color: white;
 }
 
 /* produk kami dan Products unggulan kami end */

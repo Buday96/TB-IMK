@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #fff;
+  background-color: #3c3d37;
   color: #fff;
 }
 
@@ -130,7 +130,7 @@ body {
 .header-produk .container {
   text-align: center;
   background-color: #f5f7f8;
-  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 95%, rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0));
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0));
 }
 
@@ -138,13 +138,13 @@ body {
   text-transform: uppercase;
   padding: 10rem 7% 1.4rem;
   font-size: 50px;
-  color: red;
+  color: var(--primary);
 }
 
 .header-produk .container .sub-header h2 {
   text-transform: uppercase;
   font-size: 25px;
-  color: red;
+  color: var(--primary);
   padding-bottom: 3rem;
   margin-bottom: 2rem;
 }
@@ -181,7 +181,7 @@ body {
 
 .apply-btn {
   color: #fff;
-  background-color: #d32f2f;
+  background-color: var(--primary);
 }
 
 .apply-btn:hover {
@@ -192,12 +192,12 @@ body {
   display: flex;
   align-items: center;
   font-size: 16px;
-  color: #666;
+  color: white;
   background: none;
 }
 
 .reset-btn:hover {
-  color: #333;
+  color: var(--primary);
 }
 
 .reset-btn::before {
@@ -235,7 +235,7 @@ body {
 }
 .product-name {
   font-weight: bold;
-  color: #d00000;
+  color: var(--primary);
   font-size: 18px;
   margin-bottom: 5px;
 }
@@ -269,10 +269,67 @@ body {
   background-color: #333;
 }
 
+/* produk end */
+
+/* next produk start */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #555;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination .active a {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+/* next produk end*/
+
 /* Contact Section */
+.contact {
+  padding: 7rem 7% 1.4rem;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.contact h2 {
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  text-align: center;
+  max-width: 60rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
 .contact .row {
   display: flex;
-  margin-top: 15rem;
+  margin-top: 5rem;
   background-color: var(--primary);
 }
 
